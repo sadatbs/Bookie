@@ -5,7 +5,7 @@ function Searchbar(props) {
     <div className = "container">
       <div className = "row">
         <section className = "col s6 offset-s4">
-          <form action = "">
+          <form action = "" onSubmit = {props.handleSubmit}>
             <input placeholder = "Search for Book" type = "text" onChange = {props.handleSearch}></input>
           </form>
         </section>

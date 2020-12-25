@@ -6,9 +6,9 @@ const Header = ()=>{
     return(
 <div >
     <nav style = {{height : 90}}>
-        <div class="nav-wrapper black lighten-1 "  >
+        <div className="nav-wrapper black lighten-1 "  >
         <header>
-                <h1 class = "brand-logo center" style = {{color:"lightgreen" }}><FontAwesomeIcon icon = {faBook}/>Bookie</h1>
+                <h1 className = "brand-logo center" style = {{color:"lightgreen" }}><FontAwesomeIcon icon = {faBook}/>Bookie</h1>
         </header>
         </div>
      </nav>
