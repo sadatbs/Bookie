@@ -10,7 +10,7 @@ function Booklist(props) {
                 {props.books.map((book, index)=>{
                     console.log(book);
                     return(
-                    <div>
+                    <div  className = "col s3 m3">
                         <Bookcard
                             key = {index}
                             image = {book.volumeInfo.imageLinks.thumbnail}
