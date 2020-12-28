@@ -3,15 +3,18 @@ import axios from 'axios';
 const googleBooks = axios.create({
     baseURL: "https://www.googleapis.com/"
 });
-const getBookData  = (searchValue, setBooks)=>{
+const getBookData  = (searchValue, setBooks, startIndex, setTotalResults)=>{
     googleBooks.get("/books/v1/volumes",{
         params:{
          q:searchValue,    
-         maxResults : 40
+         maxResults : 20,
+         startIndex : startIndex
         }
     }).then((response)=>{
         console.log( "initial",response)
         setBooks(removeExceptions(response));
+        if(startIndex == 0)
+        setTotalResults(response.data.totalItems);
     }
     )
 

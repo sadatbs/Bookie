@@ -11,11 +11,11 @@ function Bookcard(props) {
       <div className="card-image">
         <img src={props.image} />
       </div>
-      <span className="card-title" style= {{color:"green"}}>Title:{props.title}</span>
+      <span className="card-content " style= {{color:"green"}}>Title:{props.title}</span>
       <br></br>
-      <span className="card-title" style= {{color:"blue"}}>Author:{props.author}</span>
+      <span className="card-content " style= {{color:"blue"}}>Author:{props.author}</span>
       <br></br>
-      <span className="card-title" style= {{color:"darkgreen"}}>Published:{props.published}</span>
+      <span className="card-content" style= {{color:"darkgreen"}}>Published:{props.published}</span>
       <div className="card-content">
         
       </div>
