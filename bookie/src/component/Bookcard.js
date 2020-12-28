@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 
 function Bookcard(props) {
@@ -17,6 +18,9 @@ function Bookcard(props) {
       <br></br>
       <span className="card-content" style= {{color:"darkgreen"}}>Published:{props.published}</span>
       <div className="card-content">
+      <div class="card-action">
+          <Link to={{pathname: "/bookDetails/" + props.title, title:props.title, author:props.author, published:props.published, image:props.image, description:props.description, props :props.props }}>See Details</Link>
+                </div>
         
       </div>
     </div>
